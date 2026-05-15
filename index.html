@@ -1015,5 +1015,10 @@ if (savedBackup) {
   document.getElementById('counter').classList.remove('hidden');
 }
 </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 </body>
 </html>
